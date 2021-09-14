@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCE2C10726F103FE00F75BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10626F103FE00F75BD3 /* AppDelegate.swift */; };
+		DCE2C10926F103FE00F75BD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10826F103FE00F75BD3 /* ContentView.swift */; };
+		DCE2C10B26F103FE00F75BD3 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */; };
+		DCE2C10D26F1040A00F75BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE2C10C26F1040A00F75BD3 /* Assets.xcassets */; };
+		DCE2C11026F1040A00F75BD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE2C10F26F1040A00F75BD3 /* Preview Assets.xcassets */; };
+		DCE2C11B26F1040C00F75BD3 /* VivariARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C11A26F1040C00F75BD3 /* VivariARTests.swift */; };
+		DCE2C12626F1040C00F75BD3 /* VivariARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C12526F1040C00F75BD3 /* VivariARUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCE2C11726F1040C00F75BD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE2C0FB26F103FD00F75BD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE2C10226F103FE00F75BD3;
+			remoteInfo = VivariAR;
+		};
+		DCE2C12226F1040C00F75BD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE2C0FB26F103FD00F75BD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE2C10226F103FE00F75BD3;
+			remoteInfo = VivariAR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCE2C10326F103FE00F75BD3 /* VivariAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivariAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE2C10626F103FE00F75BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCE2C10826F103FE00F75BD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		DCE2C10C26F1040A00F75BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCE2C10F26F1040A00F75BD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCE2C11126F1040A00F75BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE2C11626F1040C00F75BD3 /* VivariARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VivariARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE2C11A26F1040C00F75BD3 /* VivariARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivariARTests.swift; sourceTree = "<group>"; };
+		DCE2C11C26F1040C00F75BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE2C12126F1040C00F75BD3 /* VivariARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VivariARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE2C12526F1040C00F75BD3 /* VivariARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivariARUITests.swift; sourceTree = "<group>"; };
+		DCE2C12726F1040C00F75BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCE2C10026F103FE00F75BD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE2C11326F1040C00F75BD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE2C11E26F1040C00F75BD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCE2C0FA26F103FD00F75BD3 = {
+			isa = PBXGroup;
+			children = (
+				DCE2C10526F103FE00F75BD3 /* VivariAR */,
+				DCE2C11926F1040C00F75BD3 /* VivariARTests */,
+				DCE2C12426F1040C00F75BD3 /* VivariARUITests */,
+				DCE2C10426F103FE00F75BD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCE2C10426F103FE00F75BD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCE2C10326F103FE00F75BD3 /* VivariAR.app */,
+				DCE2C11626F1040C00F75BD3 /* VivariARTests.xctest */,
+				DCE2C12126F1040C00F75BD3 /* VivariARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCE2C10526F103FE00F75BD3 /* VivariAR */ = {
+			isa = PBXGroup;
+			children = (
+				DCE2C10626F103FE00F75BD3 /* AppDelegate.swift */,
+				DCE2C10826F103FE00F75BD3 /* ContentView.swift */,
+				DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */,
+				DCE2C10C26F1040A00F75BD3 /* Assets.xcassets */,
+				DCE2C11126F1040A00F75BD3 /* Info.plist */,
+				DCE2C10E26F1040A00F75BD3 /* Preview Content */,
+			);
+			path = VivariAR;
+			sourceTree = "<group>";
+		};
+		DCE2C10E26F1040A00F75BD3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DCE2C10F26F1040A00F75BD3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCE2C11926F1040C00F75BD3 /* VivariARTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE2C11A26F1040C00F75BD3 /* VivariARTests.swift */,
+				DCE2C11C26F1040C00F75BD3 /* Info.plist */,
+			);
+			path = VivariARTests;
+			sourceTree = "<group>";
+		};
+		DCE2C12426F1040C00F75BD3 /* VivariARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE2C12526F1040C00F75BD3 /* VivariARUITests.swift */,
+				DCE2C12726F1040C00F75BD3 /* Info.plist */,
+			);
+			path = VivariARUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCE2C10226F103FE00F75BD3 /* VivariAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE2C12A26F1040C00F75BD3 /* Build configuration list for PBXNativeTarget "VivariAR" */;
+			buildPhases = (
+				DCE2C0FF26F103FE00F75BD3 /* Sources */,
+				DCE2C10026F103FE00F75BD3 /* Frameworks */,
+				DCE2C10126F103FE00F75BD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VivariAR;
+			productName = VivariAR;
+			productReference = DCE2C10326F103FE00F75BD3 /* VivariAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCE2C11526F1040C00F75BD3 /* VivariARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE2C12D26F1040C00F75BD3 /* Build configuration list for PBXNativeTarget "VivariARTests" */;
+			buildPhases = (
+				DCE2C11226F1040C00F75BD3 /* Sources */,
+				DCE2C11326F1040C00F75BD3 /* Frameworks */,
+				DCE2C11426F1040C00F75BD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCE2C11826F1040C00F75BD3 /* PBXTargetDependency */,
+			);
+			name = VivariARTests;
+			productName = VivariARTests;
+			productReference = DCE2C11626F1040C00F75BD3 /* VivariARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCE2C12026F1040C00F75BD3 /* VivariARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE2C13026F1040C00F75BD3 /* Build configuration list for PBXNativeTarget "VivariARUITests" */;
+			buildPhases = (
+				DCE2C11D26F1040C00F75BD3 /* Sources */,
+				DCE2C11E26F1040C00F75BD3 /* Frameworks */,
+				DCE2C11F26F1040C00F75BD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCE2C12326F1040C00F75BD3 /* PBXTargetDependency */,
+			);
+			name = VivariARUITests;
+			productName = VivariARUITests;
+			productReference = DCE2C12126F1040C00F75BD3 /* VivariARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCE2C0FB26F103FD00F75BD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DCE2C10226F103FE00F75BD3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					DCE2C11526F1040C00F75BD3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DCE2C10226F103FE00F75BD3;
+					};
+					DCE2C12026F1040C00F75BD3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DCE2C10226F103FE00F75BD3;
+					};
+				};
+			};
+			buildConfigurationList = DCE2C0FE26F103FD00F75BD3 /* Build configuration list for PBXProject "VivariAR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCE2C0FA26F103FD00F75BD3;
+			productRefGroup = DCE2C10426F103FE00F75BD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCE2C10226F103FE00F75BD3 /* VivariAR */,
+				DCE2C11526F1040C00F75BD3 /* VivariARTests */,
+				DCE2C12026F1040C00F75BD3 /* VivariARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCE2C10126F103FE00F75BD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE2C11026F1040A00F75BD3 /* Preview Assets.xcassets in Resources */,
+				DCE2C10D26F1040A00F75BD3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE2C11426F1040C00F75BD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE2C11F26F1040C00F75BD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCE2C0FF26F103FE00F75BD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE2C10926F103FE00F75BD3 /* ContentView.swift in Sources */,
+				DCE2C10726F103FE00F75BD3 /* AppDelegate.swift in Sources */,
+				DCE2C10B26F103FE00F75BD3 /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE2C11226F1040C00F75BD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE2C11B26F1040C00F75BD3 /* VivariARTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE2C11D26F1040C00F75BD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE2C12626F1040C00F75BD3 /* VivariARUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCE2C11826F1040C00F75BD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE2C10226F103FE00F75BD3 /* VivariAR */;
+			targetProxy = DCE2C11726F1040C00F75BD3 /* PBXContainerItemProxy */;
+		};
+		DCE2C12326F1040C00F75BD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE2C10226F103FE00F75BD3 /* VivariAR */;
+			targetProxy = DCE2C12226F1040C00F75BD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCE2C12826F1040C00F75BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCE2C12926F1040C00F75BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCE2C12B26F1040C00F75BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VivariAR/Preview Content\"";
+				DEVELOPMENT_TEAM = FTQJ652C7F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VivariAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.felixmedia.VivariAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCE2C12C26F1040C00F75BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VivariAR/Preview Content\"";
+				DEVELOPMENT_TEAM = FTQJ652C7F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VivariAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.felixmedia.VivariAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCE2C12E26F1040C00F75BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FTQJ652C7F;
+				INFOPLIST_FILE = VivariARTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.felixmedia.VivariARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VivariAR.app/VivariAR";
+			};
+			name = Debug;
+		};
+		DCE2C12F26F1040C00F75BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FTQJ652C7F;
+				INFOPLIST_FILE = VivariARTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.felixmedia.VivariARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VivariAR.app/VivariAR";
+			};
+			name = Release;
+		};
+		DCE2C13126F1040C00F75BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FTQJ652C7F;
+				INFOPLIST_FILE = VivariARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.felixmedia.VivariARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VivariAR;
+			};
+			name = Debug;
+		};
+		DCE2C13226F1040C00F75BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FTQJ652C7F;
+				INFOPLIST_FILE = VivariARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.felixmedia.VivariARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VivariAR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCE2C0FE26F103FD00F75BD3 /* Build configuration list for PBXProject "VivariAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE2C12826F1040C00F75BD3 /* Debug */,
+				DCE2C12926F1040C00F75BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE2C12A26F1040C00F75BD3 /* Build configuration list for PBXNativeTarget "VivariAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE2C12B26F1040C00F75BD3 /* Debug */,
+				DCE2C12C26F1040C00F75BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE2C12D26F1040C00F75BD3 /* Build configuration list for PBXNativeTarget "VivariARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE2C12E26F1040C00F75BD3 /* Debug */,
+				DCE2C12F26F1040C00F75BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE2C13026F1040C00F75BD3 /* Build configuration list for PBXNativeTarget "VivariARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE2C13126F1040C00F75BD3 /* Debug */,
+				DCE2C13226F1040C00F75BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCE2C0FB26F103FD00F75BD3 /* Project object */;
+}
