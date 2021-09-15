@@ -9,10 +9,15 @@ import SwiftUI
 
 struct StartView: View {
     var body: some View {
+        //Main ZStack
         ZStack {
+            //Background
             Color(.init("offWhite"))
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            VStack {
+            
+            //Content VStack
+            VStack (spacing: 50){
+                //Top Text with Mask Image
                 HStack(spacing: -100) {
                     HStack(spacing: -200) {
                         VerticalText(text: "Kalkriese")
@@ -27,9 +32,16 @@ struct StartView: View {
                     
                 }
                 
-//                Button(action: {
-//                        Label("Start Experience", systemImage: "folder.badge.plus")
-//                    }
+                //Start Button
+                Button(action: {
+                    print("Start")
+                }){
+                    Text("Start Experience")
+                        .font(.system(size: 20, weight: .semibold, design: .default))
+                        .foregroundColor(.black)
+                        .padding()
+                }
+                
             }
         }
     }
@@ -41,6 +53,7 @@ struct StartView_Previews: PreviewProvider {
     }
 }
 
+// Text struct for Vertical Text on the Left
 struct VerticalText: View {
     let text: String
     
