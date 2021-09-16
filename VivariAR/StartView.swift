@@ -60,7 +60,7 @@ struct VerticalText: View {
     var body: some View {
         Text(text)
             .font(.system(size: 100, weight: .black, design: .default))
-            .foregroundColor(.init("pinkAccent"))
+            .foregroundColor(Color.accentColor)
             .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
             .frame(width: 600, height: 300, alignment: .center)
             .rotationEffect(.init(degrees: -90))
