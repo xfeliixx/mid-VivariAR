@@ -8,11 +8,11 @@
 import SwiftUI
 
 @main
-struct TestApp: App {
+struct VivariARApp: App {
     var body: some Scene {
         WindowGroup {
 //            StartView()
-           ContentView()
+           ArView()
         }
     }
 }

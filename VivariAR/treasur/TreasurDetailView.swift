@@ -16,8 +16,12 @@ diente dem Schutz von Briefsiegeln, vor allem bei Wachstäfelchen. Hierzu wurde 
     var body: some View {
         VStack {
             TreasurIcon()
-            HeadText(tex: "Die Siegelkapsel")
-            Text(exTest)
+            Spacer()
+            VStack {
+                HeadText(tex: "Die Siegelkapsel")
+                    .font(.headline)
+                Text(exTest)
+            }
         }
     }
 }
@@ -29,10 +33,10 @@ struct TreasurDetailView_Previews: PreviewProvider {
 }
 
 struct HeadText: View {
-let tex: String
+    let tex: String
     
     var body: some View {
         Text(tex)
-            
+        
     }
 }

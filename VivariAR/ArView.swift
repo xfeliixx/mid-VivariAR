@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ArView.swift
 //  VivariAR
 //
 //  Created by Felix Bick on 14.09.21.
@@ -8,9 +8,10 @@
 import SwiftUI
 import RealityKit
 
-struct ContentView : View {
+struct ArView : View {
     var body: some View {
-        return ARViewContainer().padding().edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        return ARViewContainer()
+            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
     }
 }
@@ -36,9 +37,9 @@ struct ARViewContainer: UIViewRepresentable {
 }
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct ArView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ArView()
     }
 }
 #endif
