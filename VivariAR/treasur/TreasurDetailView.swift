@@ -8,39 +8,44 @@
 import SwiftUI
 
 struct TreasurDetailView: View {
-    
-//    Only Temp -> get data from Service
-    let exTest: String = """
-Sie diente dem Schutz von Briefsiegeln, vor allem bei Wachstäfelchen. Hierzu wurde das zugeklappte und beschriftete Täfelchen mit Schnüren verpackt und deren Enden durch die runden Öffnungen der Kapsel geführt. Dort wurden sie dann mit Siegelwachs beträufelt und dieses mit einem Siegelring besiegelt.
-"""
-    
+    @Environment(\.presentationMode) var presentationMode
+
+    var tresure: Tresure?
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                //Background Color
-                Color(.white)
+        ZStack {
+            //Foreground
+            VStack(spacing: 40) {
                 
-                //Icon
-                VStack(spacing: 40) {
-                    TreasurIcon(imageName: "Tresure1")
-                    
-                    //Text Card
-                    ZStack {
-                        //Background
-                        RoundedRectangle(cornerRadius: 25)
-                            .fill(Color("OffWhite"))
-                            .shadow(radius: 10)
-                        //Text
-                        VStack {
-                            HeadText(tex: "Die Siegelkapsel")
-                                .padding(10)
-                            Text(exTest)
-                                .padding(.horizontal, 40)
-                        }
+                //Close Button
+                HStack() {
+                    Spacer()
+                    Button {
+                        self.presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .foregroundColor(Color(.label))
+                            .imageScale(.large)
+                            .frame(width: 44, height: 44)
                     }
-                    .ignoresSafeArea()
+                    .padding(.trailing)
+                
                 }
+                //MainContent
+                VStack(spacing: 40) {
+                    //Icon
+                    TreasurIcon(imageName: tresure?.imageName ?? "")
+                    
+                    //Text
+                    VStack {
+                        HeadText(tex: tresure?.name ?? "")
+                            .padding(10)
+                        Text(tresure?.description ?? "")
+                            .padding(.horizontal, 40)
+                    }
+                }
+                
+                
             }
         }
     }
@@ -48,7 +53,8 @@ Sie diente dem Schutz von Briefsiegeln, vor allem bei Wachstäfelchen. Hierzu wu
 
 struct TreasurDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TreasurDetailView()
+        TreasurDetailView(tresure: Tresure(name: "this is a test", imageName: "Tresure1", description: "Hallo"))
+            .preferredColorScheme(.dark)
     }
 }
 

@@ -27,7 +27,7 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
-		<string>pinkAccent</string>
+		<string>AccentColor</string>
 		<key>UIImageName</key>
 		<string>MaskFull</string>
 	</dict>

@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct TreasurView: View {
+  @StateObject var viewModel = TresureViewModel()
+   
+    
+    
     //Grid Collums
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
@@ -18,12 +22,19 @@ struct TreasurView: View {
             ScrollView {
                 //Grid
                 LazyVGrid(columns: columns) {
-                    ForEach(TreasurData.Tresures, id: \.id) { Tresure in
-                        TresureItem(tresure: Tresure)
+                    ForEach(TreasurData.Tresures, id: \.id) { tresureThing in
+                        TresureItem(tresure: tresureThing)
+                            .onTapGesture {
+                                viewModel.selectedTresure = tresureThing
+                            }
                     }
                     
                 }.navigationBarTitle(Text("Treasures"))
                     .padding(.horizontal)
+                    .sheet(isPresented: $viewModel.isShowing) {
+                        TreasurDetailView(tresure: viewModel.selectedTresure)
+                    }
+
             }
         }
     }

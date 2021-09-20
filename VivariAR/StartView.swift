@@ -23,7 +23,7 @@ struct StartView: View {
                         VerticalText(text: "Kalkriese")
                         VerticalText(text: "Museum")
                     }
-                    Image("mask")
+                    Image("Mask")
                         .renderingMode(.original)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
