@@ -17,7 +17,7 @@ struct Route: Hashable, Identifiable {
 struct RouteData {
     static let Routes = [
         
-        Route(name: "Way of the Romans",
+        Route(name: "Roman Way",
               imageName: "MaskFull")
         ,
         Route(name: "Way 1",

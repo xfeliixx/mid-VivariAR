@@ -23,7 +23,6 @@ struct MapView: View {
                     ForEach(RouteData.Routes, id: \.id) { Route in
                         RouteItem(route: Route)
                     }
-                    
                 }
                 .navigationBarTitle(Text("Routes"))
                 .padding(.bottom, 50)
@@ -49,14 +48,17 @@ struct MapView: View {
                         .resizable()
                         .frame(width: 60, height: 60)
                         .clipShape(Circle())
-                        .padding()
                     
                     Text(route.name)
                         .font(.body)
                         .fontWeight(.semibold)
                         .scaledToFit()
                         .minimumScaleFactor(0.6)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.leading)
+                        
                 }
+                .padding()
             }
             
         }
