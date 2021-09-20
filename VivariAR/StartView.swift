@@ -2,7 +2,7 @@
 //  StartView.swift
 //  VivariAR
 //
-//  Created by Felix Bick on 15.09.21.
+//  Created by Felix Bick on 15.08.21.
 //
 
 import SwiftUI
@@ -12,7 +12,7 @@ struct StartView: View {
         //Main ZStack
         ZStack {
             //Background
-            Color(.init("offWhite"))
+            Color(.init("OffWhite"))
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             //Content VStack

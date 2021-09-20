@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC07B6C026F79D3100180F80 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6BF26F79D3100180F80 /* MapView.swift */; };
+		DC07B6C226F7D01E00180F80 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6C126F7D01E00180F80 /* Routes.swift */; };
+		DC07B6C526F7E96E00180F80 /* Treasurs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6C426F7E96E00180F80 /* Treasurs.swift */; };
 		DC293F1226F2C97C0043ED8D /* VivariARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1126F2C97C0043ED8D /* VivariARApp.swift */; };
 		DC293F1426F2CB2D0043ED8D /* TreasurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1326F2CB2D0043ED8D /* TreasurView.swift */; };
 		DC293F1626F2CB3E0043ED8D /* TreasurDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1526F2CB3E0043ED8D /* TreasurDetailView.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC07B6BF26F79D3100180F80 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DC07B6C126F7D01E00180F80 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		DC07B6C426F7E96E00180F80 /* Treasurs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasurs.swift; sourceTree = "<group>"; };
 		DC293F1126F2C97C0043ED8D /* VivariARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivariARApp.swift; sourceTree = "<group>"; };
 		DC293F1326F2CB2D0043ED8D /* TreasurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurView.swift; sourceTree = "<group>"; };
 		DC293F1526F2CB3E0043ED8D /* TreasurDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurDetailView.swift; sourceTree = "<group>"; };
@@ -41,9 +47,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC07B6C326F7D7C400180F80 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DC07B6C126F7D01E00180F80 /* Routes.swift */,
+				DC07B6BF26F79D3100180F80 /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		DC293F1926F2CBD40043ED8D /* treasur */ = {
 			isa = PBXGroup;
 			children = (
+				DC07B6C426F7E96E00180F80 /* Treasurs.swift */,
 				DC293F1326F2CB2D0043ED8D /* TreasurView.swift */,
 				DC293F1526F2CB3E0043ED8D /* TreasurDetailView.swift */,
 				DC293F1726F2CB780043ED8D /* TreasurIcon.swift */,
@@ -72,6 +88,7 @@
 			children = (
 				DC293F1126F2C97C0043ED8D /* VivariARApp.swift */,
 				DCA7940E26F26E8A00626DD8 /* StartView.swift */,
+				DC07B6C326F7D7C400180F80 /* Map */,
 				DCE2C10826F103FE00F75BD3 /* ArView.swift */,
 				DC293F1926F2CBD40043ED8D /* treasur */,
 				DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */,
@@ -150,8 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCE2C10926F103FE00F75BD3 /* ArView.swift in Sources */,
+				DC07B6C026F79D3100180F80 /* MapView.swift in Sources */,
 				DCA7940F26F26E8A00626DD8 /* StartView.swift in Sources */,
 				DC293F1426F2CB2D0043ED8D /* TreasurView.swift in Sources */,
+				DC07B6C226F7D01E00180F80 /* Routes.swift in Sources */,
+				DC07B6C526F7E96E00180F80 /* Treasurs.swift in Sources */,
 				DC293F1826F2CB780043ED8D /* TreasurIcon.swift in Sources */,
 				DC293F1226F2C97C0043ED8D /* VivariARApp.swift in Sources */,
 				DC293F1626F2CB3E0043ED8D /* TreasurDetailView.swift in Sources */,

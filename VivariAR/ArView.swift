@@ -2,7 +2,7 @@
 //  ArView.swift
 //  VivariAR
 //
-//  Created by Felix Bick on 14.09.21.
+//  Created by Felix Bick on 14.08.21.
 //
 
 import SwiftUI
@@ -10,6 +10,7 @@ import RealityKit
 
 struct ArView : View {
     var body: some View {
+        
         return ARViewContainer()
             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             

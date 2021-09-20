@@ -2,22 +2,24 @@
 //  TreasurIcon.swift
 //  VivariAR
 //
-//  Created by Felix Bick on 16.09.21.
+//  Created by Felix Bick on 16.08.21.
 //
 
 import SwiftUI
 
+//Tresur Icon
 struct TreasurIcon: View {
+    
+    let imageName: String
     var body: some View {
-        Image("treasur1")
+        Image(imageName)
             .clipShape(Circle())
-        .overlay(Circle().stroke(.gray, lineWidth: 3))
         
     }
 }
 
 struct TreasurIcon_Previews: PreviewProvider {
     static var previews: some View {
-        TreasurIcon()
+        TreasurIcon(imageName: "Tresure1")
     }
 }
