@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TreasurView: View {
-  @StateObject var viewModel = TresureViewModel()
+    @StateObject var viewModel = TresureViewModel()
    
     
     

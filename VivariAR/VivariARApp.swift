@@ -11,8 +11,9 @@ import SwiftUI
 struct VivariARApp: App {
     var body: some Scene {
         WindowGroup {
-//            StartView()
-           ArView()
+            StartView()
+           //ArView()
+            //MapView()
         }
     }
 }

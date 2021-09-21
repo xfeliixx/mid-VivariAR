@@ -10,58 +10,120 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    
+    @Environment(\.colorScheme) var colorScheme
+    @State private var isPresented = false
+    @State private var selectedRoute: Route? = nil
+
     //Grid Rows
     let row: [GridItem] = [GridItem(.flexible()),
-                               GridItem(.flexible())]
+                           GridItem(.flexible())]
     
     var body: some View {
-        NavigationView {
-            VStack {
-                //Grid with Routs
-                LazyHGrid(rows: row) {
-                    ForEach(RouteData.Routes, id: \.id) { Route in
-                        RouteItem(route: Route)
+        VStack {
+            //Grid with Routs
+            LazyHGrid(rows: row) {
+                ForEach(RouteData.Routes, id: \.id) { Route in
+                    VStack {
+                        ZStack {
+                            Circle()
+                            
+                            Image(Route.imageName)
+                                .resizable()
+                                .frame(width: 60, height: 60)
+                                .clipShape(Circle())
+                        }
+                        
+                        Text(Route.name)
+                            .font(.body)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                            .minimumScaleFactor(0.7)
+                            .lineLimit(2)
+                        
+                    }
+                    .frame(width: 100, height: 100)
+                    .padding()
+                    .onTapGesture {
+                        self.selectedRoute = Route
                     }
                 }
-                .navigationBarTitle(Text("Routes"))
-                .padding(.bottom, 50)
-                
+            }
+            .padding(.bottom, 50)
+            
+            ZStack {
                 //Map
                 RouteMap()
                     .ignoresSafeArea()
-                
-            }
-        }
-    }
-        
-        struct MapView_Previews: PreviewProvider {
-            static var previews: some View {
-                MapView()
-            }
-        }
-        struct RouteItem:  View {
-            let route: Route
-            var body: some View {
                 VStack {
-                    Image(route.imageName)
-                        .resizable()
-                        .frame(width: 60, height: 60)
-                        .clipShape(Circle())
+                    Spacer()
                     
-                    Text(route.name)
-                        .font(.body)
-                        .fontWeight(.semibold)
-                        .scaledToFit()
-                        .minimumScaleFactor(0.6)
-                        .lineLimit(2)
-                        .multilineTextAlignment(.leading)
-                        
+                    HStack {
+                        Spacer()
+                        // Start AR Button
+                        NavigationLink(destination: ArView()) {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 50)
+                                    .fill(Color(UIColor.systemBackground))
+                                
+                                HStack {
+                                    if colorScheme == .dark {
+                                        Image("Glyph-ARKit-Control-Label")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .padding(.vertical, 5)
+                                            .colorInvert()
+                                    } else {
+                                        Image("Glyph-ARKit-Control-Label")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .padding(.vertical, 5)
+                                    }
+                                    
+                                    Text("Start in AR")
+                                        .foregroundColor(Color(UIColor.label))
+                                        .font(.body)
+                                        .padding(.trailing, 5)
+                                }
+                            }
+                        }
+                        .frame(width: 165, height: 50)
+                        .padding(20)
+                    }
                 }
-                .padding()
             }
+        }
+        .navigationTitle("Routes")
+    }
+    
+    struct MapView_Previews: PreviewProvider {
+        static var previews: some View {
+            MapView()
+                .preferredColorScheme(.dark)
             
         }
+    }
+    
+    struct RouteItem:  View {
+        let route: Route
+        var body: some View {
+            VStack {
+                Image(route.imageName)
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                    .clipShape(Circle())
+                
+                Text(route.name)
+                    .font(.body)
+                    .fontWeight(.semibold)
+                    .scaledToFit()
+                    .minimumScaleFactor(0.6)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
+                
+            }
+            .padding()
+        }
+    }
     
     struct RouteMap: View {
         @State private var region = MKCoordinateRegion(
@@ -70,11 +132,11 @@ struct MapView: View {
                 longitude: 8.127572
             ),
             span: MKCoordinateSpan(
-                latitudeDelta: 0.05,
-                longitudeDelta: 0.05
+                latitudeDelta: 0.005,
+                longitudeDelta: 0.005
             )
         )
-
+        
         var body: some View {
             Map(coordinateRegion: $region)
         }

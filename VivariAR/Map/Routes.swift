@@ -20,10 +20,10 @@ struct RouteData {
         Route(name: "Roman Way",
               imageName: "MaskFull")
         ,
-        Route(name: "Way 1",
+        Route(name: "German Way",
               imageName: "MaskFull"),
         
-        Route(name: "Way of Test",
+        Route(name: "Explorer Path",
               imageName: "MaskFull"),
         
         Route(name: "13 Years",

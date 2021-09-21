@@ -58,7 +58,7 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
-		DC293F1926F2CBD40043ED8D /* treasur */ = {
+		DC293F1926F2CBD40043ED8D /* Treasur */ = {
 			isa = PBXGroup;
 			children = (
 				DC07B6C426F7E96E00180F80 /* Treasurs.swift */,
@@ -67,7 +67,7 @@
 				DC293F1526F2CB3E0043ED8D /* TreasurDetailView.swift */,
 				DC293F1726F2CB780043ED8D /* TreasurIcon.swift */,
 			);
-			path = treasur;
+			path = Treasur;
 			sourceTree = "<group>";
 		};
 		DCE2C0FA26F103FD00F75BD3 = {
@@ -92,8 +92,8 @@
 				DC293F1126F2C97C0043ED8D /* VivariARApp.swift */,
 				DCA7940E26F26E8A00626DD8 /* StartView.swift */,
 				DC07B6C326F7D7C400180F80 /* Map */,
+				DC293F1926F2CBD40043ED8D /* Treasur */,
 				DCE2C10826F103FE00F75BD3 /* ArView.swift */,
-				DC293F1926F2CBD40043ED8D /* treasur */,
 				DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */,
 				DCE2C10C26F1040A00F75BD3 /* Assets.xcassets */,
 				DCE2C11126F1040A00F75BD3 /* Info.plist */,
@@ -309,9 +309,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VivariAR/Preview Content\"";
-				DEVELOPMENT_TEAM = FTQJ652C7F;
+				DEVELOPMENT_TEAM = X9759XNATP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VivariAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +331,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VivariAR/Preview Content\"";
-				DEVELOPMENT_TEAM = FTQJ652C7F;
+				DEVELOPMENT_TEAM = X9759XNATP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VivariAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
