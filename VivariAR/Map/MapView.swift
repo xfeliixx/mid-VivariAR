@@ -25,13 +25,18 @@ struct MapView: View {
                 ForEach(RouteData.Routes, id: \.id) { Route in
                     VStack {
                         ZStack {
-                            Circle()
-                            
                             Image(Route.imageName)
                                 .resizable()
                                 .frame(width: 60, height: 60)
                                 .clipShape(Circle())
+                            if selectedRoute == Route {
+                                Circle()
+                                    .fill(Color("PinkAccent"))
+                                    .frame(width: 60, height: 60)
+                                    .opacity(0.6)
+                            }
                         }
+                        .frame(width: 90, height: 90)
                         
                         Text(Route.name)
                             .font(.body)

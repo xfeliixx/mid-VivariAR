@@ -18,7 +18,7 @@ struct RouteData {
     static let Routes = [
         
         Route(name: "Roman Way",
-              imageName: "MaskFull")
+              imageName: "test")
         ,
         Route(name: "German Way",
               imageName: "MaskFull"),

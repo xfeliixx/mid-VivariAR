@@ -14,10 +14,10 @@ struct StartView: View {
             ZStack {
                 //Background
                 Color(.init("StartBackground"))
-                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    .edgesIgnoringSafeArea(.all)
                 
                 //Content VStack
-                VStack (spacing: 50){
+                VStack(spacing: 50){
                     //Top Text with Mask Image
                     HStack(spacing: -100) {
                         HStack(spacing: -200) {
@@ -49,6 +49,8 @@ struct StartView: View {
                     .colorInvert()
                     .padding()
                 }
+                
+                TresureButton()
             }
             .navigationBarTitle("Start")
             .navigationBarHidden(true)
@@ -58,7 +60,10 @@ struct StartView: View {
 
 struct StartView_Previews: PreviewProvider {
     static var previews: some View {
-        StartView()
+        Group {
+            StartView()
+                .preferredColorScheme(.dark)
+        }
     }
 }
 
@@ -75,5 +80,35 @@ struct VerticalText: View {
             .rotationEffect(.init(degrees: -90))
             .padding(-160)
     }
-    
+}
+
+struct TresureButton: View {
+    var body: some View {
+        VStack {
+            HStack() {
+                
+                //Workaround due to a SwiftUI Bug that is moving the NavLink out of screen
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                
+                NavigationLink(destination: TreasurView()) {
+                    ZStack {
+                        Circle()
+                            .fill(Color(UIColor.systemBackground))
+                            .frame(width: 50, height: 50)
+                            .padding()
+                            .colorInvert()
+                        Image(systemName: "cube")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .foregroundColor(Color(UIColor.systemBackground))
+                    }
+                }
+                Spacer()
+            }
+            Spacer()
+        }
+    }
 }
