@@ -9,8 +9,8 @@ import SwiftUI
 
 struct TreasurDetailView: View {
     @Environment(\.presentationMode) var presentationMode
-
-    var tresure: Tresure?
+    
+    var tresure: Treasure?
     
     var body: some View {
         ZStack {
@@ -29,7 +29,7 @@ struct TreasurDetailView: View {
                             .frame(width: 44, height: 44)
                     }
                     .padding(.trailing)
-                
+                    
                 }
                 //MainContent
                 VStack(spacing: 40) {
@@ -53,11 +53,12 @@ struct TreasurDetailView: View {
 
 struct TreasurDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TreasurDetailView(tresure: Tresure(name: "this is a test", imageName: "Tresure1", description: "Hallo"))
+        TreasurDetailView(tresure: Treasure(name: "this is a test", imageName: "Tresure1", description: "Hallo"))
             .preferredColorScheme(.dark)
     }
 }
 
+// Struct for Head Text
 struct HeadText: View {
     let tex: String
     
