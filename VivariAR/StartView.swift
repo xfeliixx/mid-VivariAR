@@ -50,8 +50,6 @@ struct StartView: View {
                     .colorInvert()
                     .padding()
                 }
-                //Tresure Button on Top in front of everything else
-                TresureButton()
             }
             .navigationBarTitle("Start")
             .navigationBarHidden(true)
@@ -80,38 +78,5 @@ struct VerticalText: View {
             .frame(width: 600, height: 300, alignment: .center)
             .rotationEffect(.init(degrees: -90))
             .padding(-160)
-    }
-}
-
-// Struct for the Tresure Button on Top
-struct TresureButton: View {
-    var body: some View {
-        VStack {
-            HStack() {
-                
-                //Workaround due to a SwiftUI Bug that is moving the NavLink out of screen
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                
-                //Navigates to TreasurView
-                NavigationLink(destination: TreasureView()) {
-                    ZStack {
-                        Circle()
-                            .fill(Color(UIColor.systemBackground))
-                            .frame(width: 50, height: 50)
-                            .padding()
-                            .colorInvert()
-                        Image(systemName: "cube")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .foregroundColor(Color(UIColor.systemBackground))
-                    }
-                }
-                Spacer()
-            }
-            Spacer()
-        }
     }
 }

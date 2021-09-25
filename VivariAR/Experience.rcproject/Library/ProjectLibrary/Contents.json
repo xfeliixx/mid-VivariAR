@@ -13,5 +13,25 @@
     "libraryIdentifier" : "5b3a71f9ca73cb1331e16004061ae745",
     "format" : "model",
     "displayName" : "baum_2.usdz"
+  },
+  {
+    "libraryIdentifier" : "df8393836c7fa49c352499cee1aeb003",
+    "format" : "model",
+    "displayName" : "zelt.usdz"
+  },
+  {
+    "libraryIdentifier" : "3c28c45cbee92113cac85ee8efbe9ade",
+    "format" : "model",
+    "displayName" : "spear.usdz"
+  },
+  {
+    "libraryIdentifier" : "e068b35719c5d5d06dc5316ef473b44d",
+    "format" : "model",
+    "displayName" : "schaufel.usdz"
+  },
+  {
+    "libraryIdentifier" : "f80c3d2c5efb70cdf9c1998fc7ca50b1",
+    "format" : "model",
+    "displayName" : "römer_normal.usdz"
   }
 ]

@@ -31,7 +31,7 @@ struct TreasureView: View {
             }.navigationBarTitle(Text("Treasures"))
             //Modal
                 .sheet(isPresented: $viewModel.isShowing) {
-                    TreasurDetailView(tresure: viewModel.selectedTresure)
+                    TreasureDetailView(tresure: viewModel.selectedTresure)
                 }
             
         }

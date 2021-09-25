@@ -1,5 +1,5 @@
 //
-//  TreasurDetailView.swift
+//  TreasureDetailView.swift
 //  VivariAR
 //
 //  Created by Felix Bick on 16.08.21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TreasurDetailView: View {
+struct TreasureDetailView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var tresure: Treasure?
@@ -51,9 +51,9 @@ struct TreasurDetailView: View {
     }
 }
 
-struct TreasurDetailView_Previews: PreviewProvider {
+struct TreasureDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TreasurDetailView(tresure: Treasure(name: "this is a test", imageName: "Tresure1", description: "Hallo"))
+        TreasureDetailView(tresure: Treasure(name: "this is a test", imageName: "Tresure1", description: "Hallo"))
             .preferredColorScheme(.dark)
     }
 }
