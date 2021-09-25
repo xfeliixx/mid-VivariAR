@@ -1,5 +1,5 @@
 //
-//  TreasurView.swift
+//  TreasureView.swift
 //  VivariAR
 //
 //  Created by Felix Bick on 16.08.21.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct TreasurView: View {
-    @StateObject var viewModel = TresureViewModel()
+struct TreasureView: View {
+    @StateObject var viewModel = TreasureViewModel()
     
     
     
@@ -21,15 +21,15 @@ struct TreasurView: View {
         ScrollView {
             //Grid
             LazyVGrid(columns: columns) {
-                ForEach(TreasurData.Tresures, id: \.id) { tresureThing in
-                    TresureItem(tresure: tresureThing)
+                ForEach(TreasureData.Tresures, id: \.id) { tresureThing in
+                    TreasureItem(tresure: tresureThing)
                         .onTapGesture {
                             viewModel.selectedTresure = tresureThing
                         }
                 }
                 
             }.navigationBarTitle(Text("Treasures"))
-                .padding(.horizontal)
+            //Modal
                 .sheet(isPresented: $viewModel.isShowing) {
                     TreasurDetailView(tresure: viewModel.selectedTresure)
                 }
@@ -41,12 +41,13 @@ struct TreasurView: View {
 
 struct TreasurView_Previews: PreviewProvider {
     static var previews: some View {
-        TreasurView()
+        TreasureView()
     }
 }
 
-struct TresureItem:  View {
-    let tresure: Tresure
+//Struct for the TresureItem
+struct TreasureItem:  View {
+    let tresure: Treasure
     var body: some View {
         Image(tresure.imageName)
             .resizable()

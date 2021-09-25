@@ -1,7 +1,17 @@
 [
   {
-    "libraryIdentifier" : "0a4f66ff0ac8c7a0faf3f717427a8e01",
+    "libraryIdentifier" : "d7107f82fcf991c2a2834d9578520f5a",
     "format" : "model",
-    "displayName" : "feuer.usdz"
+    "displayName" : "fire.usdz"
+  },
+  {
+    "libraryIdentifier" : "c669961d7e79195287e29a3c41bfad54",
+    "format" : "model",
+    "displayName" : "horse 2.usdz"
+  },
+  {
+    "libraryIdentifier" : "5b3a71f9ca73cb1331e16004061ae745",
+    "format" : "model",
+    "displayName" : "baum_2.usdz"
   }
 ]

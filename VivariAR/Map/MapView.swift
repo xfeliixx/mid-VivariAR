@@ -10,17 +10,19 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    //
     @Environment(\.colorScheme) var colorScheme
+    //
     @State private var isPresented = false
+    // Currently Selected Route
     @State private var selectedRoute: Route? = nil
-
+    
     //Grid Rows
-    let row: [GridItem] = [GridItem(.flexible()),
-                           GridItem(.flexible())]
+    let row: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
         VStack {
-            //Grid with Routs
+            //HGrid with Routs
             LazyHGrid(rows: row) {
                 ForEach(RouteData.Routes, id: \.id) { Route in
                     VStack {
@@ -29,6 +31,7 @@ struct MapView: View {
                                 .resizable()
                                 .frame(width: 60, height: 60)
                                 .clipShape(Circle())
+                            //Selected Route Red Marker
                             if selectedRoute == Route {
                                 Circle()
                                     .fill(Color("PinkAccent"))
@@ -53,7 +56,7 @@ struct MapView: View {
                     }
                 }
             }
-            .padding(.bottom, 50)
+            .padding([.leading, .bottom, .trailing])
             
             ZStack {
                 //Map
@@ -65,11 +68,13 @@ struct MapView: View {
                     HStack {
                         Spacer()
                         // Start AR Button
+                        //Navigates to AR View
                         NavigationLink(destination: ArView()) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 50)
                                     .fill(Color(UIColor.systemBackground))
                                 
+                                //Dark Mode Icon Support
                                 HStack {
                                     if colorScheme == .dark {
                                         Image("Glyph-ARKit-Control-Label")
@@ -97,6 +102,7 @@ struct MapView: View {
                 }
             }
         }
+        //Title for this View
         .navigationTitle("Routes")
     }
     
@@ -108,6 +114,7 @@ struct MapView: View {
         }
     }
     
+    //Struct for the Route Item in the Grid
     struct RouteItem:  View {
         let route: Route
         var body: some View {
@@ -130,6 +137,7 @@ struct MapView: View {
         }
     }
     
+    //Struct for the Route Map with Kalkirese Coordinates
     struct RouteMap: View {
         @State private var region = MKCoordinateRegion(
             center: CLLocationCoordinate2D(

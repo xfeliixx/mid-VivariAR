@@ -4,6 +4,7 @@
 //
 //  Created by Felix Bick on 19.08.21.
 //
+// Routes Data for MapView
 
 import Foundation
 
@@ -18,7 +19,7 @@ struct RouteData {
     static let Routes = [
         
         Route(name: "Roman Way",
-              imageName: "test")
+              imageName: "MaskFull")
         ,
         Route(name: "German Way",
               imageName: "MaskFull"),
@@ -26,15 +27,14 @@ struct RouteData {
         Route(name: "Explorer Path",
               imageName: "MaskFull"),
         
-        Route(name: "13 Years",
+        Route(name: "Experience Walk",
               imageName: "MaskFull"),
         
-        Route(name: "Long Way",
+        Route(name: "History Spots",
               imageName: "MaskFull"),
         
-        Route(name: "Stuff",
+        Route(name: "Local Route",
               imageName: "MaskFull"),
         
     ]
-    
 }

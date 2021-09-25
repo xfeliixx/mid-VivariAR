@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		DC07B6C026F79D3100180F80 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6BF26F79D3100180F80 /* MapView.swift */; };
 		DC07B6C226F7D01E00180F80 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6C126F7D01E00180F80 /* Routes.swift */; };
-		DC07B6C526F7E96E00180F80 /* Treasurs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6C426F7E96E00180F80 /* Treasurs.swift */; };
+		DC07B6C526F7E96E00180F80 /* Treasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6C426F7E96E00180F80 /* Treasures.swift */; };
 		DC293F1226F2C97C0043ED8D /* VivariARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1126F2C97C0043ED8D /* VivariARApp.swift */; };
-		DC293F1426F2CB2D0043ED8D /* TreasurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1326F2CB2D0043ED8D /* TreasurView.swift */; };
+		DC293F1426F2CB2D0043ED8D /* TreasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1326F2CB2D0043ED8D /* TreasureView.swift */; };
 		DC293F1626F2CB3E0043ED8D /* TreasurDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1526F2CB3E0043ED8D /* TreasurDetailView.swift */; };
 		DC293F1826F2CB780043ED8D /* TreasurIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1726F2CB780043ED8D /* TreasurIcon.swift */; };
-		DC3CC43026F8E93C005024F3 /* TresureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3CC42F26F8E93C005024F3 /* TresureViewModel.swift */; };
+		DC3CC43026F8E93C005024F3 /* TreasureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3CC42F26F8E93C005024F3 /* TreasureViewModel.swift */; };
 		DCA7940F26F26E8A00626DD8 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA7940E26F26E8A00626DD8 /* StartView.swift */; };
 		DCE2C10926F103FE00F75BD3 /* ArView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10826F103FE00F75BD3 /* ArView.swift */; };
 		DCE2C10B26F103FE00F75BD3 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */; };
@@ -24,12 +24,12 @@
 /* Begin PBXFileReference section */
 		DC07B6BF26F79D3100180F80 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DC07B6C126F7D01E00180F80 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
-		DC07B6C426F7E96E00180F80 /* Treasurs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasurs.swift; sourceTree = "<group>"; };
+		DC07B6C426F7E96E00180F80 /* Treasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasures.swift; sourceTree = "<group>"; };
 		DC293F1126F2C97C0043ED8D /* VivariARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivariARApp.swift; sourceTree = "<group>"; };
-		DC293F1326F2CB2D0043ED8D /* TreasurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurView.swift; sourceTree = "<group>"; };
+		DC293F1326F2CB2D0043ED8D /* TreasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureView.swift; sourceTree = "<group>"; };
 		DC293F1526F2CB3E0043ED8D /* TreasurDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurDetailView.swift; sourceTree = "<group>"; };
 		DC293F1726F2CB780043ED8D /* TreasurIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurIcon.swift; sourceTree = "<group>"; };
-		DC3CC42F26F8E93C005024F3 /* TresureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TresureViewModel.swift; sourceTree = "<group>"; };
+		DC3CC42F26F8E93C005024F3 /* TreasureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureViewModel.swift; sourceTree = "<group>"; };
 		DCA7940E26F26E8A00626DD8 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		DCE2C10326F103FE00F75BD3 /* VivariAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivariAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE2C10826F103FE00F75BD3 /* ArView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArView.swift; sourceTree = "<group>"; };
@@ -61,9 +61,9 @@
 		DC293F1926F2CBD40043ED8D /* Treasur */ = {
 			isa = PBXGroup;
 			children = (
-				DC07B6C426F7E96E00180F80 /* Treasurs.swift */,
-				DC3CC42F26F8E93C005024F3 /* TresureViewModel.swift */,
-				DC293F1326F2CB2D0043ED8D /* TreasurView.swift */,
+				DC07B6C426F7E96E00180F80 /* Treasures.swift */,
+				DC3CC42F26F8E93C005024F3 /* TreasureViewModel.swift */,
+				DC293F1326F2CB2D0043ED8D /* TreasureView.swift */,
 				DC293F1526F2CB3E0043ED8D /* TreasurDetailView.swift */,
 				DC293F1726F2CB780043ED8D /* TreasurIcon.swift */,
 			);
@@ -170,12 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCE2C10926F103FE00F75BD3 /* ArView.swift in Sources */,
-				DC3CC43026F8E93C005024F3 /* TresureViewModel.swift in Sources */,
+				DC3CC43026F8E93C005024F3 /* TreasureViewModel.swift in Sources */,
 				DC07B6C026F79D3100180F80 /* MapView.swift in Sources */,
 				DCA7940F26F26E8A00626DD8 /* StartView.swift in Sources */,
-				DC293F1426F2CB2D0043ED8D /* TreasurView.swift in Sources */,
+				DC293F1426F2CB2D0043ED8D /* TreasureView.swift in Sources */,
 				DC07B6C226F7D01E00180F80 /* Routes.swift in Sources */,
-				DC07B6C526F7E96E00180F80 /* Treasurs.swift in Sources */,
+				DC07B6C526F7E96E00180F80 /* Treasures.swift in Sources */,
 				DC293F1826F2CB780043ED8D /* TreasurIcon.swift in Sources */,
 				DC293F1226F2C97C0043ED8D /* VivariARApp.swift in Sources */,
 				DC293F1626F2CB3E0043ED8D /* TreasurDetailView.swift in Sources */,
@@ -309,10 +309,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VivariAR/Preview Content\"";
-				DEVELOPMENT_TEAM = X9759XNATP;
+				DEVELOPMENT_TEAM = FTQJ652C7F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VivariAR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,10 +331,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VivariAR/Preview Content\"";
-				DEVELOPMENT_TEAM = X9759XNATP;
+				DEVELOPMENT_TEAM = FTQJ652C7F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VivariAR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

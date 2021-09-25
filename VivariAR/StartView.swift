@@ -34,6 +34,7 @@ struct StartView: View {
                     }
                     
                     //Start Button
+                    //Navigates to MapView
                     NavigationLink(destination: MapView()) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 50)
@@ -49,7 +50,7 @@ struct StartView: View {
                     .colorInvert()
                     .padding()
                 }
-                
+                //Tresure Button on Top in front of everything else
                 TresureButton()
             }
             .navigationBarTitle("Start")
@@ -67,7 +68,7 @@ struct StartView_Previews: PreviewProvider {
     }
 }
 
-// Text struct for Vertical Text on the Left
+// Struct for Vertical Text on the Left
 struct VerticalText: View {
     let text: String
     
@@ -82,6 +83,7 @@ struct VerticalText: View {
     }
 }
 
+// Struct for the Tresure Button on Top
 struct TresureButton: View {
     var body: some View {
         VStack {
@@ -93,7 +95,8 @@ struct TresureButton: View {
                 Spacer()
                 Spacer()
                 
-                NavigationLink(destination: TreasurView()) {
+                //Navigates to TreasurView
+                NavigationLink(destination: TreasureView()) {
                     ZStack {
                         Circle()
                             .fill(Color(UIColor.systemBackground))
