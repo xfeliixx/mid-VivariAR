@@ -10,9 +10,9 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    //
+    // reads system color Scheme
     @Environment(\.colorScheme) var colorScheme
-    //
+    //Bool if the Marker is presented
     @State private var isPresented = false
     // Currently Selected Route
     @State private var selectedRoute: Route? = nil
@@ -79,7 +79,7 @@ struct MapView: View {
             ToolbarItem(placement: .bottomBar) {
                 // Start AR Button
                 //Navigates to AR View
-                NavigationLink(destination: ArView()) {
+                NavigationLink(destination: AugmentedView()) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 50)
                             .fill(Color(UIColor.systemBackground))

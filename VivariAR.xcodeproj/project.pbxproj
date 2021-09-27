@@ -16,7 +16,7 @@
 		DC293F1826F2CB780043ED8D /* TreasurIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1726F2CB780043ED8D /* TreasurIcon.swift */; };
 		DC3CC43026F8E93C005024F3 /* TreasureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3CC42F26F8E93C005024F3 /* TreasureViewModel.swift */; };
 		DCA7940F26F26E8A00626DD8 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA7940E26F26E8A00626DD8 /* StartView.swift */; };
-		DCE2C10926F103FE00F75BD3 /* ArView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10826F103FE00F75BD3 /* ArView.swift */; };
+		DCE2C10926F103FE00F75BD3 /* AugmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10826F103FE00F75BD3 /* AugmentedView.swift */; };
 		DCE2C10B26F103FE00F75BD3 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */; };
 		DCE2C10D26F1040A00F75BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE2C10C26F1040A00F75BD3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -32,7 +32,7 @@
 		DC3CC42F26F8E93C005024F3 /* TreasureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureViewModel.swift; sourceTree = "<group>"; };
 		DCA7940E26F26E8A00626DD8 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		DCE2C10326F103FE00F75BD3 /* VivariAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivariAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCE2C10826F103FE00F75BD3 /* ArView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArView.swift; sourceTree = "<group>"; };
+		DCE2C10826F103FE00F75BD3 /* AugmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedView.swift; sourceTree = "<group>"; };
 		DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		DCE2C10C26F1040A00F75BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCE2C11126F1040A00F75BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			children = (
 				DC293F1126F2C97C0043ED8D /* VivariARApp.swift */,
 				DCA7940E26F26E8A00626DD8 /* StartView.swift */,
-				DCE2C10826F103FE00F75BD3 /* ArView.swift */,
+				DCE2C10826F103FE00F75BD3 /* AugmentedView.swift */,
 				DC07B6C326F7D7C400180F80 /* Map */,
 				DC293F1926F2CBD40043ED8D /* Treasure */,
 				DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */,
@@ -169,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE2C10926F103FE00F75BD3 /* ArView.swift in Sources */,
+				DCE2C10926F103FE00F75BD3 /* AugmentedView.swift in Sources */,
 				DC3CC43026F8E93C005024F3 /* TreasureViewModel.swift in Sources */,
 				DC07B6C026F79D3100180F80 /* MapView.swift in Sources */,
 				DCA7940F26F26E8A00626DD8 /* StartView.swift in Sources */,

@@ -28,8 +28,6 @@
 	<dict>
 		<key>UIColorName</key>
 		<string>AccentColor</string>
-		<key>UIImageName</key>
-		<string>MaskFull</string>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

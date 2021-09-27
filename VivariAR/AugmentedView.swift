@@ -1,5 +1,5 @@
 //
-//  ArView.swift
+//  AugmentedView.swift
 //  VivariAR
 //
 //  Created by Felix Bick on 14.08.21.
@@ -11,7 +11,7 @@ import ARKit
 
 
 //AR View
-struct ArView : View {
+struct AugmentedView : View {
     var body: some View {
         
         return ARViewContainer()
@@ -42,7 +42,7 @@ struct ARViewContainer: UIViewRepresentable {
 #if DEBUG
 struct ArView_Previews : PreviewProvider {
     static var previews: some View {
-        ArView()
+        AugmentedView()
     }
 }
 #endif
@@ -69,9 +69,10 @@ extension ARView: ARCoachingOverlayViewDelegate {
         _ coachingOverlayView: ARCoachingOverlayView
     ) {
 
-        let boxAnchor = try! Experience.loadCamp()
+        let boxAnchor = try! Experience.loadFight()
         
         // Add the box anchor to the scene
         self.scene.anchors.append(boxAnchor)
     }
 }
+

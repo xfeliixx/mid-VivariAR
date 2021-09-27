@@ -33,5 +33,20 @@
     "libraryIdentifier" : "f80c3d2c5efb70cdf9c1998fc7ca50b1",
     "format" : "model",
     "displayName" : "römer_normal.usdz"
+  },
+  {
+    "libraryIdentifier" : "c81fc811c9582a3c48ef5bb810761009",
+    "format" : "model",
+    "displayName" : "9_Tote.usdz"
+  },
+  {
+    "libraryIdentifier" : "255805c56ece47eb0b5c758a8d655edd",
+    "format" : "model",
+    "displayName" : "8_Angriff.usdz"
+  },
+  {
+    "libraryIdentifier" : "3c1da3b7569f797e985d13d4b0669757",
+    "format" : "model",
+    "displayName" : "4_Kommandanten.usdz"
   }
 ]
