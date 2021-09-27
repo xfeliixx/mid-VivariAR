@@ -19,22 +19,22 @@ struct RouteData {
     static let Routes = [
         
         Route(name: "Roman Way",
-              imageName: "MaskFull")
+              imageName: "Route3")
         ,
         Route(name: "German Way",
-              imageName: "MaskFull"),
+              imageName: "Route4"),
         
         Route(name: "Explorer Path",
-              imageName: "MaskFull"),
+              imageName: "Route2"),
         
         Route(name: "Experience Walk",
-              imageName: "MaskFull"),
+              imageName: "Route5"),
         
         Route(name: "History Spots",
-              imageName: "MaskFull"),
+              imageName: "Route1"),
         
         Route(name: "Local Route",
-              imageName: "MaskFull"),
+              imageName: "Route6"),
         
     ]
 }
