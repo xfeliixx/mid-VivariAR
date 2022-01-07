@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "MaskFull.png",
+      "filename" : "maskFull-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "maskFull.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
