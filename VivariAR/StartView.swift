@@ -34,8 +34,8 @@ struct StartView: View {
                     }
                     
                     //Start Button
-                    //Navigates to MapView
-                    NavigationLink(destination: MapView()) {
+                    //Navigates to RoutesView
+                    NavigationLink(destination: RoutesView()) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 50)
                                 .fill(Color(UIColor.systemBackground))

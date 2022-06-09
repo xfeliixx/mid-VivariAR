@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC07B6C026F79D3100180F80 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6BF26F79D3100180F80 /* MapView.swift */; };
+		DC02BBAA285231FB00DF6E38 /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BBA9285231FB00DF6E38 /* MapKitView.swift */; };
+		DC02BBAC2852324E00DF6E38 /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BBAB2852324E00DF6E38 /* RouteMapView.swift */; };
+		DC07B6C026F79D3100180F80 /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6BF26F79D3100180F80 /* RoutesView.swift */; };
 		DC07B6C226F7D01E00180F80 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6C126F7D01E00180F80 /* Routes.swift */; };
 		DC07B6C526F7E96E00180F80 /* Treasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6C426F7E96E00180F80 /* Treasures.swift */; };
 		DC293F1226F2C97C0043ED8D /* VivariARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1126F2C97C0043ED8D /* VivariARApp.swift */; };
@@ -16,13 +18,16 @@
 		DC293F1826F2CB780043ED8D /* TreasurIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC293F1726F2CB780043ED8D /* TreasurIcon.swift */; };
 		DC3CC43026F8E93C005024F3 /* TreasureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3CC42F26F8E93C005024F3 /* TreasureViewModel.swift */; };
 		DCA7940F26F26E8A00626DD8 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA7940E26F26E8A00626DD8 /* StartView.swift */; };
+		DCC5FC4E284FE6140084C454 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC5FC4C284FE5D10084C454 /* MapKit.framework */; };
 		DCE2C10926F103FE00F75BD3 /* AugmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10826F103FE00F75BD3 /* AugmentedView.swift */; };
 		DCE2C10B26F103FE00F75BD3 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */; };
 		DCE2C10D26F1040A00F75BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE2C10C26F1040A00F75BD3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC07B6BF26F79D3100180F80 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DC02BBA9285231FB00DF6E38 /* MapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitView.swift; sourceTree = "<group>"; };
+		DC02BBAB2852324E00DF6E38 /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
+		DC07B6BF26F79D3100180F80 /* RoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesView.swift; sourceTree = "<group>"; };
 		DC07B6C126F7D01E00180F80 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		DC07B6C426F7E96E00180F80 /* Treasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasures.swift; sourceTree = "<group>"; };
 		DC293F1126F2C97C0043ED8D /* VivariARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivariARApp.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 		DC293F1726F2CB780043ED8D /* TreasurIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurIcon.swift; sourceTree = "<group>"; };
 		DC3CC42F26F8E93C005024F3 /* TreasureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureViewModel.swift; sourceTree = "<group>"; };
 		DCA7940E26F26E8A00626DD8 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		DCC5FC4C284FE5D10084C454 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DCE2C10326F103FE00F75BD3 /* VivariAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivariAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE2C10826F103FE00F75BD3 /* AugmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedView.swift; sourceTree = "<group>"; };
 		DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -43,19 +49,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC5FC4E284FE6140084C454 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC07B6C326F7D7C400180F80 /* Map */ = {
+		DC07B6C326F7D7C400180F80 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
 				DC07B6C126F7D01E00180F80 /* Routes.swift */,
-				DC07B6BF26F79D3100180F80 /* MapView.swift */,
+				DC07B6BF26F79D3100180F80 /* RoutesView.swift */,
+				DC02BBAB2852324E00DF6E38 /* RouteMapView.swift */,
+				DC02BBA9285231FB00DF6E38 /* MapKitView.swift */,
 			);
-			path = Map;
+			path = Routes;
 			sourceTree = "<group>";
 		};
 		DC293F1926F2CBD40043ED8D /* Treasure */ = {
@@ -70,11 +79,20 @@
 			path = Treasure;
 			sourceTree = "<group>";
 		};
+		DCC5FC4B284FE5D10084C454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCC5FC4C284FE5D10084C454 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCE2C0FA26F103FD00F75BD3 = {
 			isa = PBXGroup;
 			children = (
 				DCE2C10526F103FE00F75BD3 /* VivariAR */,
 				DCE2C10426F103FE00F75BD3 /* Products */,
+				DCC5FC4B284FE5D10084C454 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +110,7 @@
 				DC293F1126F2C97C0043ED8D /* VivariARApp.swift */,
 				DCA7940E26F26E8A00626DD8 /* StartView.swift */,
 				DCE2C10826F103FE00F75BD3 /* AugmentedView.swift */,
-				DC07B6C326F7D7C400180F80 /* Map */,
+				DC07B6C326F7D7C400180F80 /* Routes */,
 				DC293F1926F2CBD40043ED8D /* Treasure */,
 				DCE2C10A26F103FE00F75BD3 /* Experience.rcproject */,
 				DCE2C10C26F1040A00F75BD3 /* Assets.xcassets */,
@@ -171,7 +189,8 @@
 			files = (
 				DCE2C10926F103FE00F75BD3 /* AugmentedView.swift in Sources */,
 				DC3CC43026F8E93C005024F3 /* TreasureViewModel.swift in Sources */,
-				DC07B6C026F79D3100180F80 /* MapView.swift in Sources */,
+				DC02BBAC2852324E00DF6E38 /* RouteMapView.swift in Sources */,
+				DC07B6C026F79D3100180F80 /* RoutesView.swift in Sources */,
 				DCA7940F26F26E8A00626DD8 /* StartView.swift in Sources */,
 				DC293F1426F2CB2D0043ED8D /* TreasureView.swift in Sources */,
 				DC07B6C226F7D01E00180F80 /* Routes.swift in Sources */,
@@ -179,6 +198,7 @@
 				DC293F1826F2CB780043ED8D /* TreasurIcon.swift in Sources */,
 				DC293F1226F2C97C0043ED8D /* VivariARApp.swift in Sources */,
 				DC293F1626F2CB3E0043ED8D /* TreasureDetailView.swift in Sources */,
+				DC02BBAA285231FB00DF6E38 /* MapKitView.swift in Sources */,
 				DCE2C10B26F103FE00F75BD3 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

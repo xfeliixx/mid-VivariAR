@@ -20,6 +20,6 @@ struct TreasurIcon: View {
 
 struct TreasurIcon_Previews: PreviewProvider {
     static var previews: some View {
-        TreasurIcon(imageName: "Tresure1")
+        TreasurIcon(imageName: "Treasure2")
     }
 }

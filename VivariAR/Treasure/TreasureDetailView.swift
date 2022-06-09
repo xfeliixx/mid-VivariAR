@@ -53,7 +53,7 @@ struct TreasureDetailView: View {
 
 struct TreasureDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TreasureDetailView(tresure: Treasure(name: "this is a test", imageName: "Tresure1", description: "Hallo"))
+        TreasureDetailView(tresure: Treasure(name: "this is a test", imageName: "Treasure2", description: "Lorem ipsum"))
             .preferredColorScheme(.dark)
     }
 }
