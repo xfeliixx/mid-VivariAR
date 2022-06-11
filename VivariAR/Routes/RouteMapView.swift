@@ -1,7 +1,8 @@
 //
 //  RoutesMapView.swift
 //  VivariAR
-//
+
+//  !!Not in use replaced by MapKitView
 //  Created by Felix Bick on 09.06.22.
 //
 
@@ -22,7 +23,7 @@ struct RoutesMapView: View {
             )
             
             var body: some View {
-                Map(coordinateRegion: $region, interactionModes: .pan )
+            Map(coordinateRegion: $region, interactionModes: .pan )
             }
         }
 

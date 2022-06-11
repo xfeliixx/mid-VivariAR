@@ -18,7 +18,7 @@ struct RoutesView: View {
                 RouteSelectionGrid()
                 
                 //MapView
-                RoutesMapView()
+                MapKitView()
                     .ignoresSafeArea()
                 
             }
@@ -44,7 +44,7 @@ struct RoutesView: View {
         
     }
     
-    struct MapView_Previews: PreviewProvider {
+    struct RoutesView_Previews: PreviewProvider {
         static var previews: some View {
             RoutesView()
                 .preferredColorScheme(.dark)
